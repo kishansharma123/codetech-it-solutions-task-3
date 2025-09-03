@@ -1,0 +1,52 @@
+/* Fonts & Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: #f9f9f9; color: #333; }
+
+/* Navbar */
+header { background: #222; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; }
+.navbar { display: flex; justify-content: space-between; align-items: center; }
+.logo { color: #ff6600; font-size: 1.8rem; font-weight: 700; }
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { color: white; text-decoration: none; font-weight: 500; transition: 0.3s; }
+.nav-links a:hover { color: #ff6600; }
+
+/* Hero */
+.hero { text-align: center; padding: 6rem 2rem; background: linear-gradient(120deg, #ff6600, #ff9966); color: white; }
+.hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+.hero p { font-size: 1.3rem; margin-bottom: 1.5rem; }
+.hero .btn { background: white; color: #ff6600; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+.hero .btn:hover { background: #f1f1f1; }
+
+/* Sections */
+section { padding: 4rem 2rem; max-width: 1100px; margin: auto; }
+h2 { color: #ff6600; margin-bottom: 1.5rem; text-align: center; }
+
+/* Skills */
+.skill-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+.skill-list span { background: #fff; padding: 10px 20px; border-radius: 30px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+/* Projects */
+.projects .project-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.project { background: #fff; padding: 1rem; border-radius: 10px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s; }
+.project:hover { transform: translateY(-5px); }
+.project img { max-width: 100%; border-radius: 8px; margin-bottom: 10px; }
+.project a { color: #ff6600; text-decoration: none; font-weight: bold; }
+
+/* Resume */
+.resume .btn { display: inline-block; background: #ff6600; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+.resume .btn:hover { background: #e65c00; }
+
+/* Contact */
+.contact { text-align: center; }
+.contact a { color: #ff6600; text-decoration: none; margin: 0 10px; }
+.contact a:hover { text-decoration: underline; }
+
+/* Footer */
+footer { text-align: center; padding: 1rem; background: #222; color: #fff; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links { flex-direction: column; }
+  .nav-links li { margin: 10px 0; }
+}
